@@ -607,6 +607,11 @@ video.video_1{
     
     margin-bottom: 5px;
 }
+.my_team .row .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 p.card-text{
     text-align: center;
 }
@@ -621,30 +626,13 @@ div.card.body img{
         
     }
 }
-@media (max-width:772px) and (min-width:575px){
+@media (max-width:772px) and (min-width:5px){
     .my_team .row .card .team_img{
         width: 110px;
         height: 110px;
-       
-        
     }
 }
-@media (max-width:575px) and (min-width:410px){
-    .my_team .row .card .team_img{
-        width: 110px;
-        height: 110px;
-        
-        
-    }
-}
-@media (max-width:410px) and (min-width:100px){
-    .my_team .row .card .team_img{
-        width: 110px;
-        height: 110px;
-        
-        
-    }
-}
+
 
 
 
@@ -701,8 +689,4 @@ div.card.body img{
   
 
 
-  .center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+ 
