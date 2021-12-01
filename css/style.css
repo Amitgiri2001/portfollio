@@ -604,7 +604,7 @@ video.video_1{
     width: 170px;
     height: 170px;
     border-radius: 50%;
-    margin-left: 30px;
+    
     margin-bottom: 5px;
 }
 p.card-text{
@@ -617,7 +617,7 @@ div.card.body img{
     .my_team .row .card .team_img{
         width: 175px;
         height: 175px;
-        margin-left: 0px;
+       
         
     }
 }
@@ -625,7 +625,23 @@ div.card.body img{
     .my_team .row .card .team_img{
         width: 110px;
         height: 110px;
-        margin-left: 0px;
+       
+        
+    }
+}
+@media (max-width:575px) and (min-width:410px){
+    .my_team .row .card .team_img{
+        width: 110px;
+        height: 110px;
+        
+        
+    }
+}
+@media (max-width:410px) and (min-width:100px){
+    .my_team .row .card .team_img{
+        width: 110px;
+        height: 110px;
+        
         
     }
 }
@@ -683,3 +699,10 @@ div.card.body img{
 
 
   
+
+
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
