@@ -13,10 +13,13 @@
     font-family: 'Poppins', sans-serif;
 
 }
-
+html {
+    scroll-behavior: smooth;
+  }
 
 body{
     background-color: var(--background-color) !important;
+    
 }
 /* carsor pointer for all items */
 h1,h2,h3,h4,h5,h6,p,a,li{
