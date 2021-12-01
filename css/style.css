@@ -1,0 +1,682 @@
+/* Google fonts using import method */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Montserrat:ital,wght@0,100;1,100&family=Poppins:ital,wght@0,400;0,500;0,600;0,800;0,900;1,700&family=Ubuntu:wght@300&display=swap');
+
+
+
+/* create some color variable */
+:root{
+    --background-color: #333647;
+    --pink-color: #f87652;
+    --secondary_color:#bbbbbb;
+}
+*{
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+body{
+    background-color: var(--background-color) !important;
+}
+/* carsor pointer for all items */
+h1,h2,h3,h4,h5,h6,p,a,li{
+    cursor :pointer;
+    color: white;
+}
+
+/*------------- navbar style ---------------*/
+
+/* brand name style */
+.nav_section .navbar-brand {
+    font-size: 22px;
+}
+.nav_section .navbar-brand span{
+    color: var(--pink-color);
+}
+
+/* ul style */
+.nav_section .navbar-nav li{
+    margin: 0px 8px;
+}
+.nav_section .navbar-nav li a{
+    font-size: 15px;
+    color: white !important;
+}
+
+/* hover effect  for all list item*/
+.nav_section .navbar-nav li a::before{
+  content: '';
+  width: 7px;
+  height: 2px;
+  background-color:white;
+  position: absolute;
+  
+  bottom: 9px;
+  transition: 0.5s; /* start after hover this */
+}
+.nav_section .navbar-nav li a:hover::before{
+    content: '';
+    height: 2px;
+    width: 20px;
+    background-color: white;
+    position: absolute;
+    bottom: 7px;
+
+}
+/* ---------------home section--------------------- */
+/* home section height and align item center !important */
+.home-section .row{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+}
+.home-section .row h1,h2,h3,p{
+    color: white;
+}
+.home-section .row h1{
+    font-size: 65px;
+    font-weight: 800;
+    margin: 18px 0;
+}
+.home-section .row h1 span{
+    font-size: 65px;
+    font-weight: 800;
+   
+}
+.home-section .row h2{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 18px 0;
+}
+
+.home-section .row h3::after{
+    content: '';
+    width: 33px;
+    height: 2px;
+    position: absolute;
+    top: 15px;
+    background-color: white;
+   
+}
+.home-section .row h3{
+    font-size: 19px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+.home-section .row p{
+    color: var(--secondary_color);
+}
+.home-section .row button{
+    border-radius: 10px;
+    color: white;
+    background-color: var(--pink-color);
+    /* border: 3px solid var(--pink-color); */
+    margin-top: 12px;
+    width: 113px;
+    font-family: 'Poppins' son sans-serif;
+    border: none;
+}
+/* button hover effect */
+.home-section .row button:hover{
+    animation: swing;
+    animation-duration: 00.5s;
+    color: black;
+    background-color: white;
+    border-color: white;
+
+}
+.home-section .row img{
+    width: 80%;
+}
+
+
+/* particle effect */
+canvas.particles-js-canvas-el{
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: -200;
+    margin: 0;
+}
+
+
+
+@media (max-width:993px)and (min-width:772px){
+    .home-section .row h1{
+        font-size: 45px;
+        font-weight: 600;
+        margin: 18px 0;
+    }
+    .home-section .row h1 span{
+        font-size: 45px;
+        font-weight: 600;
+       
+    }
+    .home-section .row h2{
+        font-size: 17px;
+        font-weight: 500;
+        margin: 18px 0;
+    }
+    .home-section .row h3{
+        font-size: 14px;
+        font-weight: 300;
+        margin-bottom: 15px;
+    }
+    .home-section .row p{
+        font-size: 11px;
+        
+    }
+}
+@media (max-width:773px)and (min-width:450px){
+    .home-section .row{
+        text-align: center;
+    }
+    .home-section .row h1{
+        font-size: 40px;
+        font-weight: 500;
+        margin: 7px 0 18px 0;
+    }
+    .home-section .row h1 span{
+        font-size: 40px;
+        font-weight: 500;
+       
+    }
+    .home-section .row h2{
+        font-size: 17px;
+        font-weight: 500;
+        margin: 18px 0 7px 0;
+    }
+   
+    .home-section .row h3{
+        font-size: 14px;
+        font-weight: 300;
+        margin-top: 29px;
+        margin-bottom: 4px;
+      
+    }
+    .home-section .row img{
+        width: 60%;
+        margin-top: 22px;
+      
+    }
+    .home-section .row p{
+        font-size: 10px;
+        
+    }
+    .home-section .row h3::after{
+        height: 0px;
+    }
+}
+@media (max-width:450px){
+    .home-section .row{
+        text-align: center;
+    }
+    .home-section .row h1{
+        font-size: 33px;
+        font-weight: 500;
+        margin: 7px 0 18px 0;
+    }
+    .home-section .row h1 span{
+        font-size: 33px;
+        font-weight: 500;
+       
+    }
+    
+    .home-section .row h2{
+        font-size: 17px;
+        font-weight: 500;
+        margin: 18px 0 7px 0;
+    }
+    .home-section .row h3{
+        font-size: 14px;
+        font-weight: 300;
+        margin-top: 10px;
+        margin-bottom: 4px;
+      
+    }
+    .home-section .row button{
+        margin-bottom: 0px;
+        padding-top: 6px;
+        
+    }
+    .home-section .row img{
+        width: 60%;
+        margin-top: 6px;
+      
+    }
+    .home-section .row p{
+        font-size: 10px;
+        
+    }
+    .home-section .row h3::after{
+        height: 0px;
+    }
+}
+
+/* About Us section----------------------------- */
+.about_section{
+    background-color: #282A39;
+    padding: 80px 0px;
+}
+.about_section .heading{
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    line-height: 57px;
+}
+.about_section .emailid{
+    color: #f87652;
+    font-size: 17px;
+    margin-bottom: 23px;
+}
+.about_section .lets_talk{
+    margin-bottom: 31px;
+    font-size: 16px;
+}
+.about_section .contact_info h5,span{
+   letter-spacing: 0.5px;
+   font-size: 14px;
+}
+.about_section .about_me_right hr{
+   border: 0.5px solid var(--pink-color);
+   margin:0px;
+   width: 6rem;
+   margin-bottom: 22px;
+   
+}
+.about_section .about_me_right .table td{
+    color: white;
+    border: none;
+    font-size: 14px;
+
+}
+.about_section .about_me_right p{
+    margin-bottom: 43px;
+    color: var(--secondary_color);
+    font-size: 13px;
+}
+
+.about_section .about_me_right button{
+    border-radius: 8px;
+    color: white;
+    background-color: var(--pink-color);
+    /* border: 3px solid var(--pink-color); */
+    margin-top: 12px;
+    width: 113px;
+    font-family: 'Poppins' son sans-serif;
+    border: none;
+}
+/* button hover effect */
+.about_section .about_me_right button:hover{
+    animation: swing;
+    animation-duration: 00.5s;
+    color: black;
+    background-color: white;
+    border-color: white;
+
+}
+
+
+@media (max-width:773px)and (min-width:450px){
+    .about_section{
+        margin: 75px 0px 0px 0px;
+        padding: 35px 0px;
+        align-items: center;
+        text-align: center;
+    }
+    .about_section .heading{
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 0.75px;
+        line-height: 37px;
+    }
+    .about_section .emailid{
+        color: #f87652;
+        font-size: 13px;
+        margin-bottom: 17px;
+    }
+    
+    
+    .about_section .about_me_right hr{
+       border: 0.5px solid var(--pink-color);
+       width: 15%;
+       position: absolute;
+       left: 213px;
+    }
+    .about_section .about_me_right{
+        margin-top: 33px;
+    }
+    .about_section .about_me_right .table td{
+        color: white;
+        border: none;
+        font-size: 12px;
+    
+    }
+    .about_section .about_me_right p{
+        margin-top: 17px;
+        margin-bottom: 43px;
+        color: var(--secondary_color);
+        font-size: 11px;
+    }
+    
+    .about_section .about_me_right button{
+        border-radius: 8px;
+        color: white;
+        background-color: var(--pink-color);
+        /* border: 3px solid var(--pink-color); */
+        margin-top: 12px;
+        width: 113px;
+        font-family: 'Poppins' son sans-serif;
+        border: none;
+    }
+    /* button hover effect */
+    .about_section .about_me_right button:hover{
+        animation: swing;
+        animation-duration: 00.5s;
+        color: black;
+        background-color: white;
+        border-color: white;
+    
+    }
+    
+    
+}
+@media (max-width:450px){
+    .about_section{
+        margin: 70px 0px 0px 0px;
+        padding: 30px 0px;
+        align-items: center;
+        text-align: center;
+    }
+    .about_section .heading{
+        font-size: 17px;
+        font-weight: 600;
+        letter-spacing: 0.75px;
+        line-height: 33px;
+    }
+    .about_section .emailid{
+        color: #f87652;
+        font-size: 12px;
+        margin-bottom: 15px;
+    }
+    .about_section .lets_talk{
+        margin-bottom: 31px;
+        font-size: 12px;
+    }
+    .about_section .contact_info h5,span{
+       letter-spacing: 0.75px;
+       opacity: 0.5px;
+       font-size: 12px;
+    }
+    
+    
+    .about_section .about_me_right hr{
+       border: 0px ;
+    }
+    .about_section .about_me_right{
+        margin-top: 30px;
+    }
+    .about_section .about_me_right .table td{
+        color: white;
+        border: none;
+        font-size: 11px;
+    
+    }
+    .about_section .about_me_right p{
+        margin-top: 17px;
+        margin-bottom: 40px;
+        color: var(--secondary_color);
+        font-size: 10px;
+    }
+    
+    .about_section .about_me_right button{
+        border-radius: 8px;
+        color: white;
+        background-color: var(--pink-color);
+        /* border: 3px solid var(--pink-color); */
+        margin-top: 12px;
+        width: 113px;
+        font-family: 'Poppins' son sans-serif;
+        border: none;
+    }
+    /* button hover effect */
+    .about_section .about_me_right button:hover{
+        animation: swing;
+        animation-duration: 00.5s;
+        color: black;
+        background-color: white;
+        border-color: white;
+    
+    }
+    
+    
+}
+
+
+
+/* My skills -------------------------- */
+.skill_section{
+    background-color: var(--background-color);
+    padding: 46px 0px;
+}
+.skill_section .list-group .list-group-item{
+    margin: 3px;
+    transition: transform .2s;
+    background-color: rgb(61, 59, 59);
+}
+.skill_section .list-group .list-group-item:hover{
+    margin: 3px;
+    background-color: #f87652;
+    transform: scale(1.1);
+}
+.skill_section .skill_right p{
+    margin-top: 14px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    font-size: 12px;
+
+}
+.skill_section h2{
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    line-height: 57px;
+}
+.skill_section .skill_left hr{
+    border: 0.5px solid var(--pink-color);
+    margin:0px;
+    width: 6rem;
+    margin-bottom: 2px;
+    
+ }
+@media(max-width:774px){
+    .skill_section{
+        background-color: var(--background-color);
+        padding: 36px 0px;
+        
+    }
+    .skill_section .skill_right h2{
+        font-size: 28px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        line-height: 37px;
+        margin-top: 27px;
+    }
+
+}
+
+/* My portfolio section-------------------- */
+
+.my_portfolio{
+    padding: 56px 0px;
+    align-items: center;
+    text-align: center;
+    background-color: #282A39;
+}
+.my_portfolio .portfolio_head .tab-pane{
+    text-align: center;
+    margin: auto;
+    color: white;
+   
+}
+.my_portfolio .portfolio_head h2 {
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 23px;
+}
+video.video_1{
+    width: 515px;
+    height: 340px;
+    padding: 0px;
+    margin: 0px;
+}
+
+@media (max-width:665px)and (min-width:460px){
+    .my_portfolio .row .portfolio_head h2{
+        padding-left: 12px;
+        font-size: 25px;
+        text-decoration: none;
+        text-align: center;
+    }
+    .my_portfolio .portfolio_head .tab-pane p{
+        text-align: center;
+        margin: auto;
+        color: white;
+        font-size: 10px;
+       
+    }
+    video.video_1{
+        width: 350px;
+        padding: 0px;
+        margin: 0px;
+    }
+}
+@media (max-width:450px) and (min-width:0px){
+    .my_portfolio .row .portfolio_head h2{
+        padding-left: 14px;
+        font-size: 20px;
+        text-decoration: none;
+        text-align: center;
+    }
+    .my_portfolio .portfolio_head .tab-pane p{
+        text-align: center;
+        margin: auto;
+        color: white;
+        font-size: 8px;
+       
+    }
+    video.video_1{
+        width: 220px;
+        height: 116px;
+        padding: 0px;
+        margin: 0px;
+    }
+
+}
+
+
+
+/* My_team section _______ */
+.my_team{
+    padding: 51px 0px;
+}
+.my_team .row .card{
+    background-color: rgb(56, 54, 54);
+}
+.my_team .card-title{
+    text-align: center;
+}
+.my_team .row .card:hover{
+    background-color: #f87652;
+}
+.my_team .team_head{
+    padding-bottom: 16px;
+    font-weight: 500;
+}
+.my_team .row .card .team_img{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    margin-left: 30px;
+    margin-bottom: 5px;
+}
+p.card-text{
+    text-align: center;
+}
+div.card.body img{
+    align-items: center;
+}
+@media (max-width:1000px) and (min-width:772px){
+    .my_team .row .card .team_img{
+        width: 175px;
+        height: 175px;
+        margin-left: 0px;
+        
+    }
+}
+@media (max-width:772px) and (min-width:575px){
+    .my_team .row .card .team_img{
+        width: 110px;
+        height: 110px;
+        margin-left: 0px;
+        
+    }
+}
+
+
+
+
+/* footer ---------------- */
+/* Style all font awesome icons */
+.fa {
+    padding: 9px;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    margin-right: 11px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    margin-bottom: 12px;
+}
+  
+  /* Add a hover effect if you want */
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  /* Set a specific color for each brand */
+  .footer{
+      padding: 25px 0px;
+      text-align: center;
+      background-color: #282A39;
+      align-items: center;
+  }
+  
+  /* Facebook */
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  /* Twitter */
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  .fa-instagram {
+    background: #cc3535;
+    color: white;
+  }
+  .fa-linkedin {
+    background: blue;
+    color: white;
+  }
+
+
+
+  
