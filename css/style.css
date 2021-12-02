@@ -31,7 +31,7 @@ h1,h2,h3,h4,h5,h6,p,a,li{
 
 /* brand name style */
 .nav_section .navbar-brand {
-    font-size: 1.37rem;
+    font-size: 22px;
 }
 .nav_section .navbar-brand span{
     color: var(--pink-color);
@@ -42,7 +42,7 @@ h1,h2,h3,h4,h5,h6,p,a,li{
     margin: 0px 8px;
 }
 .nav_section .navbar-nav li a{
-    font-size: 1rem;
+    font-size: 15px;
     color: white !important;
 }
 
