@@ -77,9 +77,9 @@ h1,h2,h3,h4,h5,h6,p,a,li{
     color: white;
 }
 .home-section .row h1{
-    font-size: 5.38vw;
+    font-size: 65px;
     font-weight: 800;
-    margin: 1.125rem 0;
+    margin: 18px 0;
 }
 .home-section .row h1 span{
     font-size: 65px;
