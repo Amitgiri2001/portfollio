@@ -685,6 +685,20 @@ div.card.body img{
   }
 
 
+  /* form   section -------------------- */
+  button.btn.sign.btn-primary{
+    margin-right: 55px;
+}
+#form{
+    border-radius: 10px;
+    padding: 26px 44px 56px 44px;
+    background-image: linear-gradient(to right, #ffafbd , #ffc3a0);
+}
+.headings_form{
+    margin-bottom: 23px;
+}
+
+
 
   
 
